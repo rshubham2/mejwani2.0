@@ -271,12 +271,12 @@
               </li>
               <li class="l-section section">
                 <div class="hire">
-                  <h2>You want us to do</h2>
+                  <h2>You want us to make</h2>
                   <!-- checkout formspree.io for easy form setup -->
                   <form class="work-request">
                     <div class="work-request--options">
                       <span class="options-a">
-                        <input id="opt-1" type="checkbox" value="app design" />
+                        <input id="opt-1" type="checkbox" value="app design" onclick="clicked('Pani Puri stall')" />
                         <label for="opt-1">
                           <svg
                             version="1.1"
@@ -297,12 +297,13 @@
                               />
                             </g>
                           </svg>
-                          App Design
+                          Pani Puri stall
                         </label>
                         <input
                           id="opt-2"
                           type="checkbox"
                           value="graphic design"
+                          onclick="clicked('Starters')"
                         />
                         <label for="opt-2">
                           <svg
@@ -324,12 +325,13 @@
                               />
                             </g>
                           </svg>
-                          Graphic Design
+                         Starters
                         </label>
                         <input
                           id="opt-3"
                           type="checkbox"
                           value="motion design"
+                          onclick="clicked('Main course')"
                         />
                         <label for="opt-3">
                           <svg
@@ -351,11 +353,11 @@
                               />
                             </g>
                           </svg>
-                          Motion Design
+                          Main course
                         </label>
                       </span>
                       <span class="options-b">
-                        <input id="opt-4" type="checkbox" value="ux design" />
+                        <input id="opt-4" type="checkbox" value="ux design" onclick="clicked('Desert')" />
                         <label for="opt-4">
                           <svg
                             version="1.1"
@@ -376,9 +378,9 @@
                               />
                             </g>
                           </svg>
-                          UX Design
+                         Desert
                         </label>
-                        <input id="opt-5" type="checkbox" value="webdesign" />
+                        <input id="opt-5" type="checkbox" value="webdesign" onclick="clicked('Chinese')"/>
                         <label for="opt-5">
                           <svg
                             version="1.1"
@@ -399,9 +401,9 @@
                               />
                             </g>
                           </svg>
-                          Webdesign
+                          Chinese
                         </label>
-                        <input id="opt-6" type="checkbox" value="marketing" />
+                        <input id="opt-6" type="checkbox" value="marketing" onclick="clicked('continental')"/>
                         <label for="opt-6">
                           <svg
                             version="1.1"
@@ -422,13 +424,13 @@
                               />
                             </g>
                           </svg>
-                          Marketing
+                          Continental
                         </label>
                       </span>
                     </div>
                     <div class="work-request--information">
                       <div class="information-name">
-                        <input id="name" type="text" spellcheck="false" />
+                        <input id="name" type="text" spellcheck="false"  />
                         <label for="name">Name</label>
                       </div>
                       <div class="information-email">
@@ -452,6 +454,16 @@
         <li>Reach Us</li>
       </ul>
     </div>
+    <script>
+      var name;
+      function clicked(name){
+        this.name;
+        
+        console.log(6);
+        
+      }
+      
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
